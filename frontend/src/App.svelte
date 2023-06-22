@@ -6,7 +6,7 @@
     import logo from "./assets/esqueleto/logo_getfiteasy.png";
     import Registrar from "./pages/Registrar.svelte";
     import Bienvenido from "./sub-components/Bienvenido.svelte";
-    import SubscriberList from "./moleculas/SubscriberList.svelte";
+    import SubscriberList from "./components/SubscriberList.svelte";
     import {onMount} from "svelte";
 
     let subscribersMadrid = [];
@@ -117,6 +117,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background: url("../src/assets/imagenes/background.jpg");
+        background-size: cover;
+
     }
 
     header {
@@ -159,20 +162,19 @@
         width: 100%;
         left: 0;
         margin-top: 60px;
-        color: #254e5f;
     }
 
     .footer-registrate {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
-        color: #254e5f;
+        color: white;
     }
 
     .footer-column-cajon {
         display: flex;
         align-items: flex-start;
-        color: #254e5f;
+        color: white;
     }
 
     .footer-column ul {
@@ -186,12 +188,17 @@
     .footer-column-redes {
         margin-left: 70%;
         margin-bottom: 40px;
+        color: #87ceeb;
     }
 
     button {
-        width: 150px;
-        height: 50px;
-        border-radius: 20px;
+        margin-top: 50px;
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        border: none;
+        background: linear-gradient(to bottom, #00ff84, #87ceeb);
+        margin-right: 50px;
         color: #254e5f;
     }
 

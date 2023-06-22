@@ -19,11 +19,10 @@
         justify-content: center;
         column-gap: 20px;
         margin-top: 20px;
-        color: #254e5f;
     }
 
     section {
         text-align: center;
-        color: #254e5f;
+        color: white;
     }
 </style>

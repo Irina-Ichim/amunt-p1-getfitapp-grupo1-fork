@@ -46,8 +46,9 @@ import Direccion from "../components/Direccion.svelte";
         height: 60px;
         border-radius: 30px;
         border: none;
-        background: linear-gradient(to bottom, #c1ffc1, #87ceeb);
+        background: linear-gradient(to bottom, #00ff84, #87ceeb);
         margin-right: 50px;
+        color: #254e5f;
     }
 
     p{
@@ -57,7 +58,7 @@ import Direccion from "../components/Direccion.svelte";
         color: #254e5f;
     }
     article {
-        background: linear-gradient(to bottom, #c1ffc1, #02b2ec);
+        background: linear-gradient(to bottom, #00ff84, #87ceeb);
         display: flex;
         flex-direction: column;
         align-items: center;

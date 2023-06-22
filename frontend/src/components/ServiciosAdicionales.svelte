@@ -24,25 +24,23 @@
         align-items: center;
         justify-content: center;
         height: 30vh;
-        color: #254e5f;
     }
 
     h2, p {
         text-align: center;
-        color: #254e5f;
     }
 
     h2 {
         margin-top: -50px;
         margin-bottom: 15px;
         font-size: 1.6em;
-        color: #254e5f;
+        color: white;
     }
 
     p {
         font-size: 17px;
         margin-bottom: 30px;
-        color: #254e5f;
+        color: white;
     }
 
     ul {
@@ -58,6 +56,6 @@
         list-style: none;
         margin-bottom: 30px;
         margin-top: -50px;
-        color: #254e5f;
+        color: white;
     }
 </style>
