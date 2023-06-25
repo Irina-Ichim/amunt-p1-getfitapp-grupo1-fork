@@ -11,32 +11,32 @@
     <h1>Nuestros Servicios</h1>
     <section>
         <div>
-            <img src={imagenBoxeo}/>
+            <img src={imagenBoxeo} alt=""/>
             <p>Boxeo</p>
             <button>Haz una Reserva</button>
         </div>
         <div>
-            <img src={imagenCardio}/>
+            <img src={imagenCardio} alt=""/>
             <p>Cardio</p>
             <button>Haz una Reserva</button>
         </div>
         <div>
-            <img src={imagenEntrenador}/>
+            <img src={imagenEntrenador} alt=""/>
             <p>Entrenador Personal</p>
             <button>Haz una Reserva</button>
         </div>
         <div>
-            <img src={imagenPiscina}/>
+            <img src={imagenPiscina} alt=""/>
             <p>Piscina</p>
             <button>Haz una Reserva</button>
         </div>
         <div>
-            <img src={imagenSauna}/>
+            <img src={imagenSauna} alt=""/>
             <p>Sauna</p>
             <button>Haz una Reserva</button>
         </div>
         <div>
-            <img src={imagenYoga}/>
+            <img src={imagenYoga} alt=""/>
             <p>Yoga</p>
             <button onclick="window.location.href=`/registrate`">Haz una Reserva</button>
         </div>
@@ -68,7 +68,6 @@
     }
 
     p {
-        font-family: 'Roboto Condensed', sans-serif;
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 10px;
@@ -81,13 +80,13 @@
         width: 200px;
         height: 60px;
         border-radius: 30px;
-        background-color: white;
+        border:none;
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
+        color:#ffffff;
         font-size: 15px;
+        cursor:pointer;
     }
-    button:hover{
-        background-color: #02b2ec;
-        color: white;
-    }
+
 
     footer {
         margin-top: 80px;

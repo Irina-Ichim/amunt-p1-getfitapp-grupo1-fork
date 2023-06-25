@@ -117,8 +117,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: url("../src/assets/imagenes/background.jpg");
-        background-size: cover;
 
     }
 
@@ -161,7 +159,8 @@
         padding: 20px;
         width: 100%;
         left: 0;
-        margin-top: 60px;
+        margin-top: 5px;
+        background-color: black;
     }
 
     .footer-registrate {
@@ -188,7 +187,7 @@
     .footer-column-redes {
         margin-left: 70%;
         margin-bottom: 40px;
-        color: #87ceeb;
+        color: white;
     }
 
     button {
@@ -197,10 +196,24 @@
         height: 60px;
         border-radius: 30px;
         border: none;
-        background: linear-gradient(to bottom, #00ff84, #87ceeb);
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
         margin-right: 50px;
-        color: #254e5f;
+        color: #ffffff;
+        animation: color-transition 5s infinite alternate;
     }
+
+    @keyframes color-transition {
+        0% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+        50% {
+            background: linear-gradient(to bottom, #254e5f, #00ff84);
+        }
+        100% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+    }
+
 
     input {
         width: 200px;

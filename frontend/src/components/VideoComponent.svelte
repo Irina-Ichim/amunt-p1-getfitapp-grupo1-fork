@@ -15,8 +15,10 @@
         overflow: hidden;
         position: relative;
         border: 4px solid;
-        animation: gradient-animation 5s linear infinite;
-
+        animation: color-transition 5s infinite alternate;
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
+        border-image: linear-gradient(to bottom, #00ff84, #254e5f) 1;
+        border-image-slice: 10;
     }
 
     video {
@@ -25,14 +27,18 @@
         object-fit: fill;
     }
 
-    @keyframes gradient-animation {
+    @keyframes color-transition {
         0% {
-            border-image: linear-gradient(to right, #87ceeb, #87ceeb) 1;
-            border-image-slice: 1;
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+            border-image: linear-gradient(to bottom, #00ff84, #254e5f) 1;
+        }
+        50% {
+            background: linear-gradient(to bottom, #254e5f, #00ff84);
+            border-image: linear-gradient(to bottom, #254e5f, #00ff84) 1;
         }
         100% {
-            border-image: linear-gradient(to right, #87ceeb, #00ff84) 1;
-            border-image-slice: 1;
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+            border-image: linear-gradient(to bottom, #00ff84, #254e5f) 1;
         }
     }
 

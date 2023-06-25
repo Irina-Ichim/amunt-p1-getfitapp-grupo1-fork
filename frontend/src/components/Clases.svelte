@@ -11,21 +11,21 @@ export let sede;
 </div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     div {
-        margin-right: 190px;
-        margin-bottom: 28px;
+        margin-right: 150px;
+        margin-bottom: 20px;
     }
 
     h1 {
-        text-align: justify;
-        font-size: 35px;
-        font-weight: 900;
-        color: #254e5f;
+        display: flex;
+        justify-content: center;
+        font-size:25px;
+        color: #ffffff;
+        margin-bottom: 5px;
     }
 
     p {
-       display: flex;
-       color: #254e5f;
+       color: #ffffff;
+        text-align: start;
     }
 </style>

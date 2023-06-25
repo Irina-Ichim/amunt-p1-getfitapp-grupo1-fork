@@ -21,6 +21,7 @@ import imagenGimnasioModerno from "../assets/imagenes/detallesgimnasio.jpg"
     section {
         width: 100%;
         overflow: hidden;
+        margin-bottom: 5px;
     }
 
     div {

@@ -46,10 +46,24 @@ import Direccion from "../components/Direccion.svelte";
         height: 60px;
         border-radius: 30px;
         border: none;
-        background: linear-gradient(to bottom, #00ff84, #87ceeb);
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
         margin-right: 50px;
-        color: #254e5f;
+        color: #ffffff;
+        animation: color-transition 5s infinite alternate;
     }
+
+    @keyframes color-transition {
+        0% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+        50% {
+            background: linear-gradient(to bottom, #254e5f, #00ff84);
+        }
+        100% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+    }
+
 
     p{
         font-size: 17px;
@@ -57,23 +71,27 @@ import Direccion from "../components/Direccion.svelte";
         margin-left: 250px;
         color: #254e5f;
     }
+
     article {
-        background: linear-gradient(to bottom, #00ff84, #87ceeb);
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 30vh;
         text-align: center;
+        margin-top:-25px;
     }
 
     article h2 {
         font-size: 30px;
         margin-top: 60px;
+        color: #254e5f;
     }
 
     article p {
         margin: 10px 0 0;
         font-size: 18px;
+        color: #254e5f;
     }
 </style>

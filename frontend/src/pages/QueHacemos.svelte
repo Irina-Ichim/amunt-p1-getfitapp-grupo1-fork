@@ -2,7 +2,7 @@
     import Calendario from "../components/Calendario.svelte";
     import Clases from "../components/Clases.svelte";
 </script>
-
+<main>
 <div class="dia">
     <Calendario dia="LUNES"/>
     <div class="clases-diarias">
@@ -58,12 +58,24 @@
         <Clases hora="19h-20h" nombre="BOXEO 19-20h" instructor="INSTRUCTORA: NICOLE WINTER" sede="SEDE: Barcelona"/>
     </div>
 </div>
+</main>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-    body{
-       font-family: 'Anton', sans-serif;
+    main{
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
+        animation: color-transition 5s infinite alternate;
+    }
+    @keyframes color-transition {
+        0% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+        50% {
+            background: linear-gradient(to bottom, #254e5f, #00ff84);
+        }
+        100% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
     }
 
     .dia {

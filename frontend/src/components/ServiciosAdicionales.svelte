@@ -1,3 +1,5 @@
+
+<section>
 <div>
     <h2>SERVICIOS ADICIONALES</h2>
     <p>En GetFitEasy, siempre ampliamos nuestros servicios adicionales para satisfacer las necesidades de <br>nuestra
@@ -7,17 +9,33 @@
 <ul>
     <li>Instalaciones modernas</li>
     <li>Nutrición personal</li>
-    <li>.</li>
-    <li>.</li>
+    <li>*</li>
+    <li>*</li>
     <li>Clases premium</li>
     <li>Pases mensuales para invitados</li>
-    <li>.</li>
-    <li>.</li>
+    <li>*</li>
+    <li>*</li>
     <li>Entrenadores personales</li>
     <li>Vestidores</li>
 </ul>
+</section>
 
 <style>
+    section{
+        background: linear-gradient(to bottom, #00ff84, #254e5f);
+        animation: color-transition 5s infinite alternate;
+    }
+    @keyframes color-transition {
+        0% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+        50% {
+            background: linear-gradient(to bottom, #254e5f, #00ff84);
+        }
+        100% {
+            background: linear-gradient(to bottom, #00ff84, #254e5f);
+        }
+    }
     div {
         display: flex;
         flex-direction: column;
@@ -26,21 +44,22 @@
         height: 30vh;
     }
 
-    h2, p {
+    h2,
+    p {
         text-align: center;
     }
 
     h2 {
         margin-top: -50px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         font-size: 1.6em;
-        color: white;
+        color: #ffffff;
     }
 
     p {
         font-size: 17px;
         margin-bottom: 30px;
-        color: white;
+        color: #ffffff;
     }
 
     ul {
@@ -56,6 +75,6 @@
         list-style: none;
         margin-bottom: 30px;
         margin-top: -50px;
-        color: white;
+        color:#ffffff;
     }
 </style>
