@@ -46,23 +46,24 @@ import Direccion from "../components/Direccion.svelte";
         height: 60px;
         border-radius: 30px;
         border: none;
-        background: linear-gradient(to bottom, #00ff84, #254e5f);
+        background: linear-gradient(to bottom, #007acc, #254e5f);
         margin-right: 50px;
         color: #ffffff;
         animation: color-transition 5s infinite alternate;
     }
 
     @keyframes color-transition {
-        0% {
-            background: linear-gradient(to bottom, #00ff84, #254e5f);
-        }
-        50% {
-            background: linear-gradient(to bottom, #254e5f, #00ff84);
-        }
-        100% {
-            background: linear-gradient(to bottom, #00ff84, #254e5f);
-        }
+    0% {
+        background: linear-gradient(to bottom, #007acc, #254e5f); 
     }
+    50% {
+        background: linear-gradient(to bottom, #254e5f, #007acc); 
+    }
+    100% {
+        background: linear-gradient(to bottom, #007acc, #254e5f); 
+    }
+}
+
 
 
     p{
