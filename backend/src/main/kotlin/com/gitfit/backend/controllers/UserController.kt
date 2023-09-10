@@ -1,5 +1,4 @@
 import com.gitfit.backend.domain.User
-import com.gitfit.backend.repositories.UserRepository
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
