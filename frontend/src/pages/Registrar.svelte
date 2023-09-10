@@ -1,98 +1,104 @@
 <script>
-    import {navigate} from "svelte-routing";
+  import { navigate } from "svelte-routing";
+  let nombreUsuario = "";
+  let password = "";
+  let mensajeError = "";
 
-    let nombreUsuario = "";
-    let password = "";
-    let mensajeError ="";
-
-    function handleSubmit(){
-        if(nombreUsuario==="Ali Siam" && password==="GetFitEasy2023"){
-            navigate("/bienvenido")
-        }else if(nombreUsuario==="Madrid" && password==="GetFitEasy2023"){
-            navigate("/madrid")
-        }else if(nombreUsuario==="Barcelona" && password==="GetFitEasy2023"){
-            navigate("/barcelona")
-        }else{
-            mensajeError="Datos Incorrectos"
-        }
-
+  function handleSubmit() {
+    if (nombreUsuario === "Ali Siam" && password === "GetFitEasy2023") {
+      navigate("/bienvenido");
+    } else if (nombreUsuario === "Madrid" && password === "GetFitEasy2023") {
+      navigate("/madrid");
+    } else if (nombreUsuario === "Barcelona" && password === "GetFitEasy2023") {
+      navigate("/barcelona");
+    } else {
+      mensajeError = "Datos Incorrectos";
     }
+  }
 </script>
 
-<div>
-    <h1>Login</h1>
-    <form on:submit|preventDefault={handleSubmit}>
-        <label>Usuario</label>
-        <input type="text" bind:value={nombreUsuario}/>
-        <label>Contraseña</label>
-        <input type="password" bind:value={password}/>
-        <button type="submit">Enviar</button>
-    </form>
+<div class="login-container">
+  <h1>Login</h1>
+  <form on:submit|preventDefault={handleSubmit}>
+    <div class="form-group">
+      <label for="nombreUsuario">Usuario</label>
+      <input type="text" id="nombreUsuario" bind:value={nombreUsuario} />
+    </div>
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" bind:value={password} />
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
 
-    {#if mensajeError}
-        <p>Datos incorrectos</p>
-    {/if}
+  {#if mensajeError}
+    <p>{mensajeError}</p>
+  {/if}
 </div>
 
 <style>
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        background-image: url("../assets/esqueleto/logo_getfiteasy.png");
-        overflow: hidden;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        flex-direction: column;
-    }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
 
-    h1 {
-        color: #254e5f;
-        font-size: 54px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  h1 {
+    color: #254e5f;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        border-radius: 8px;
-    }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
 
-    label {
-        margin-bottom: 5px;
-        margin-right: 330px;
-    }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    input {
-        width: 400px;
-        padding: 8px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-    }
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 
-    button {
-        margin-right: 300px;
-        width: 100px;
-        height: 40px;
-        border-radius: 30px;
-        background-color: white;
-        font-size: 15px;
-    }
+  input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
 
-    button:hover {
-        background-color: #02b2ec;
-        color: white;
-    }
-    p{
-        color:#02b2ec;
-        font-size: 32px;
-        border-radius: 8px;
-    }
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #02b2ec;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #007acc;
+  }
+
+  p {
+    color: #02b2ec;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 </style>
