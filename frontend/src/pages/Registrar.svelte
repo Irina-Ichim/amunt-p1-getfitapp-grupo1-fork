@@ -29,6 +29,8 @@
       <input type="password" id="password" bind:value={password} />
     </div>
     <button type="submit">Enviar</button>
+    <a href="/registro">¿Nuevo usuario? Regístrate aquí</a>
+    <a href="/recuperacontraseña">¿Has olvidado tu contraseña? Click aquí</a>
   </form>
 
   {#if mensajeError}
@@ -100,5 +102,10 @@
     color: #02b2ec;
     font-size: 16px;
     margin-top: 10px;
+  }
+
+  a{
+    margin-top: 10px;
+    color:#254e5f;
   }
 </style>

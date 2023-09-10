@@ -8,6 +8,7 @@
   import Registrar from "./pages/Registrar.svelte";
   import Bienvenido from "./sub-components/Bienvenido.svelte";
   import SubscriberList from "./components/SubscriberList.svelte";
+  import Registro from "./sub-components/registro.svelte";
   import { onMount } from "svelte";
 
   let subscribersMadrid = [];
@@ -65,6 +66,7 @@
     <Route path="/barcelona">
       <SubscriberList info={subscribersBarcelona} />
     </Route>
+    <Route path="/registro" component={Registro} />
 
     <footer>
       <section class="footer-registrate">
