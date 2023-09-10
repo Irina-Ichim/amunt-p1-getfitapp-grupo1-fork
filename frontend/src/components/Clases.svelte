@@ -20,12 +20,12 @@ export let sede;
         display: flex;
         justify-content: center;
         font-size:25px;
-        color: #ffffff;
+        color:#254e5f;
         margin-bottom: 5px;
     }
 
     p {
-       color: #ffffff;
+       color: #254e5f;
         text-align: start;
     }
 </style>

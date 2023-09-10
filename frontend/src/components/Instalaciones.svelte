@@ -38,7 +38,7 @@
         <div>
             <img src={imagenYoga} alt=""/>
             <p>Yoga</p>
-            <button onclick="window.location.href=`/registrate`">Haz una Reserva</button>
+            <button>Haz una Reserva</button>
         </div>
     </section>
 </main>
@@ -81,14 +81,11 @@
         height: 60px;
         border-radius: 30px;
         border:none;
-        background: linear-gradient(to bottom, #00ff84, #254e5f);
+        background: linear-gradient(to bottom, #007acc, #254e5f);
         color:#ffffff;
         font-size: 15px;
         cursor:pointer;
     }
 
 
-    footer {
-        margin-top: 80px;
-    }
 </style>

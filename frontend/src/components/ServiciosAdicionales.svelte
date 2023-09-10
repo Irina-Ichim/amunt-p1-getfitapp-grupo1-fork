@@ -27,16 +27,16 @@
     }
     @keyframes color-transition {
     0% {
-        background: linear-gradient(to bottom, #007acc, #123456); /* Cambiamos los colores en el fondo */
-        border-image: linear-gradient(to bottom, #007acc, #123456) 1; /* Cambiamos los colores en el borde */
+        background: linear-gradient(to bottom, #007acc, #123456); 
+        border-image: linear-gradient(to bottom, #007acc, #123456) 1; 
     }
     50% {
-        background: linear-gradient(to bottom, #123456, #007acc); /* Cambiamos los colores en el fondo */
-        border-image: linear-gradient(to bottom, #123456, #007acc) 1; /* Cambiamos los colores en el borde */
+        background: linear-gradient(to bottom, #123456, #007acc); 
+        border-image: linear-gradient(to bottom, #123456, #007acc) 1; 
     }
     100% {
-        background: linear-gradient(to bottom, #007acc, #123456); /* Cambiamos los colores en el fondo */
-        border-image: linear-gradient(to bottom, #007acc, #123456) 1; /* Cambiamos los colores en el borde */
+        background: linear-gradient(to bottom, #007acc, #123456); 
+        border-image: linear-gradient(to bottom, #007acc, #123456) 1; 
     }
 }
 
