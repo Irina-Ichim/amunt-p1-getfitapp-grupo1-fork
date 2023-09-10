@@ -37,7 +37,6 @@
         border-radius: 30px;
         background-color: white;
         font-size: 15px;
-        margin-inside: 40px;
     }
 
     button:hover {
