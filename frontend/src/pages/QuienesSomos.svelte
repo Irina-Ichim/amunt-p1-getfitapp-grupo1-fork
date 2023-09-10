@@ -39,6 +39,7 @@ import Direccion from "../components/Direccion.svelte";
         padding: 30px;
         margin-bottom: 40px;
         color: #254e5f;
+    
     }
     button {
         margin-top: 50px;
@@ -74,7 +75,7 @@ import Direccion from "../components/Direccion.svelte";
     }
 
     article {
-        background: linear-gradient(to bottom, #00ff84, #254e5f);
+     
         display: flex;
         flex-direction: column;
         align-items: center;

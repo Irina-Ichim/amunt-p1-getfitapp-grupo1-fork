@@ -9,11 +9,11 @@ import imagenGimnasioModerno from "../assets/imagenes/detallesgimnasio.jpg"
 
 <section>
     <div>
-        <img src={imagenBoxeo1}/>
-        <img src={imagenBolaYoga}/>
-        <img src={imagenMaquinasModernas}/>
-        <img src={imagenPersonasGimnasio}/>
-        <img src={imagenGimnasioModerno}/>
+        <img src={imagenBoxeo1} alt=""/>
+        <img src={imagenBolaYoga} alt=""/>
+        <img src={imagenMaquinasModernas} alt=""/>
+        <img src={imagenPersonasGimnasio} alt=""/>
+        <img src={imagenGimnasioModerno} alt=""/>
     </div>
 </section>
 

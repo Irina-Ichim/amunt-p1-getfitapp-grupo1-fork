@@ -26,16 +26,20 @@
         animation: color-transition 5s infinite alternate;
     }
     @keyframes color-transition {
-        0% {
-            background: linear-gradient(to bottom, #00ff84, #254e5f);
-        }
-        50% {
-            background: linear-gradient(to bottom, #254e5f, #00ff84);
-        }
-        100% {
-            background: linear-gradient(to bottom, #00ff84, #254e5f);
-        }
+    0% {
+        background: linear-gradient(to bottom, #007acc, #123456); /* Cambiamos los colores en el fondo */
+        border-image: linear-gradient(to bottom, #007acc, #123456) 1; /* Cambiamos los colores en el borde */
     }
+    50% {
+        background: linear-gradient(to bottom, #123456, #007acc); /* Cambiamos los colores en el fondo */
+        border-image: linear-gradient(to bottom, #123456, #007acc) 1; /* Cambiamos los colores en el borde */
+    }
+    100% {
+        background: linear-gradient(to bottom, #007acc, #123456); /* Cambiamos los colores en el fondo */
+        border-image: linear-gradient(to bottom, #007acc, #123456) 1; /* Cambiamos los colores en el borde */
+    }
+}
+
     div {
         display: flex;
         flex-direction: column;
